@@ -132,7 +132,7 @@ class DB
         }
         $sql = "SELECT $math($col) FROM $this->table";
     }
-    
+
     if (isset($con)) {
       if (is_array($con)) {
         $tmp = $this->arrayToSqlArray($con);
@@ -156,37 +156,11 @@ function dd($array)
 
 function to($location)
 {
+  header("location:$location");
 }
 
 function q()
 {
 }
 
-
-$db = new DB('bottom');
-// $bot = $db->find(1);
-// $db->del(2);
-// $bot = $db->all();
-// $bot = $db->save(["bottom" =>'2022頁尾版權']);
-// dd($bot);
-
-// $row = $db->find(1);
-// print_r($row);
-
-// $row['bottom'] = '我的東西';
-// print_r($row);
-
-// $db->save($row);
-echo "資料總數為:" . $db->count();
-echo "<br>";
-echo "資料加總為:" . $db->sum('price', " WHERE id in(1,3)");
-echo "<br>";
-echo "價格最大為:" . $db->max('price');
-echo "<br>";
-echo "id最小為:" . $db->min('id');
-echo "<br>";
-echo "平均價格為:" . $db->avg('price');
-
-
-
-echo $db->sum('price', " WHERE id in(1,3)");
+$Bottom = new DB('bottom');
