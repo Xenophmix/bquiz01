@@ -17,7 +17,7 @@ include "./api/base.php";
 <body>
 	<div id="cover" style="display:none; ">
 		<div id="coverr">
-			<a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl(&#39;#cover&#39;)">X</a>
+			<a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')">X</a>
 			<div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
 		</div>
 	</div>
@@ -93,7 +93,7 @@ include "./api/base.php";
 		<div style="clear:both;"></div>
 		<div style="width:1024px; left:0px; position:relative; background:#FC3; margin-top:4px; height:123px; display:block;">
 			<span class="t" style="line-height:123px;">
-				<?= $Bottom->find(3)['bottom']; ?>
+				<?= $Bottom->find(1)['bottom']; ?>
 			</span>
 		</div>
 	</div>

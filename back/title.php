@@ -3,7 +3,7 @@
 	<?php
 	// dd($_POST);
 	?>
-	<form method="post" action="?do=tii">
+	<form method="post" action="./api/edit_title.php">
 		<table width="100%">
 			<tbody>
 				<tr class="yel">
