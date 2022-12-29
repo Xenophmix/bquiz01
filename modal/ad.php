@@ -1,6 +1,6 @@
 <h1>新增動態文字廣告</h1>
 <hr>
-<form action="./api/add_ad.php" method="POST" enctype="multipart/form-data">
+<form action="./api/add.php" method="POST" enctype="multipart/form-data">
   <table>
     <tr>
       <td>動態文字廣告:</td>
@@ -11,6 +11,7 @@
   </table>
   <div>
     <input type="submit" value="新增">
+    <input type="hidden" name="table" value="Ad">
     <input type="reset" value="重置">
   </div>
 </form>
