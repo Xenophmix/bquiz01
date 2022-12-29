@@ -3,7 +3,7 @@
 	<?php
 	// dd($_POST);
 	?>
-	<form method="post" action="./api/edit_title.php">
+	<form method="post" action="./api/edit.php">
 		<table width="100%">
 			<tbody>
 				<tr class="yel">
@@ -16,7 +16,7 @@
 				<?php
 				$rows = $Title->all();
 				foreach ($rows as $row) {
-					$checked = ($row['sh']==1)?"checked":"";
+					$checked = ($row['sh'] == 1) ? "checked" : "";
 				?>
 					<tr class="cent">
 						<td width="45%">
@@ -44,8 +44,14 @@
 		<table style="margin-top:40px; width:70%;">
 			<tbody>
 				<tr>
-					<td width="200px"><input type="button" onclick="op('#cover','#cvr','./modal/add_title.php')" value="新增網站標題圖片"></td>
-					<td class="cent"><input type="submit" value="修改確定"><input type="reset" value="重置"></td>
+					<td width="200px">
+						<input type="button" onclick="op('#cover','#cvr','./modal/add_title.php')" value="新增網站標題圖片">
+					</td>
+					<td class="cent">
+						<input type="hidden" name="table" value="Title">
+						<input type="submit" value="修改確定">
+						<input type="reset" value="重置">
+					</td>
 				</tr>
 			</tbody>
 		</table>
