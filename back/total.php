@@ -19,6 +19,7 @@
 					</td>
 					<td class="cent">
 						<input type="submit" value="修改確定">
+						<input type="hidden" name="table" value="Total">
 						<input type="reset" value="重置">
 					</td>
 				</tr>

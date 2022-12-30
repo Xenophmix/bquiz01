@@ -25,6 +25,7 @@ class DB
       $sql = $sql . " WHERE " . join(" && ", $tmp);
     } else
       $sql = $sql . " WHERE `id` = '$id'";
+    // echo $sql;
     return $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
   }
 
