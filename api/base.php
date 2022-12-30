@@ -65,7 +65,7 @@ class DB
       $sql = "insert into $this->table (`" . join("`,`", $cols) . "`) 
                                  values('" . join("','", $array) . "')";
     }
-    echo $sql;
+    // echo $sql;
     $this->pdo->exec($sql);
   }
 
@@ -141,8 +141,8 @@ class DB
         $sql = $sql . $con;
       }
     }
-    print_r($arg);
-    echo $sql;
+    // print_r($arg);
+    // echo $sql;
     return $this->pdo->query($sql)->fetchColumn();
   }
 }

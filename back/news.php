@@ -7,7 +7,7 @@
 		<table width="100%">
 			<tbody>
 				<tr class="yel">
-					<td width="80%">最新消息資料/td>
+					<td width="80%">最新消息資料</td>
 					<td width="10%">顯示</td>
 					<td width="10%">刪除</td>
 				</tr>

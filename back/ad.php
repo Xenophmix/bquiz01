@@ -36,7 +36,7 @@
 		<table style="margin-top:40px; width:70%;">
 			<tbody>
 				<tr>
-					<td width="200px"><input type="button" onclick="op('#cover','#cvr','./modal/ad.php')" value="新增動態文字廣告"></td>
+					<td width="200px"><input type="button" onclick="op('#cover','#cvr','./modal/add_ad.php')" value="新增動態文字廣告"></td>
 					<td class="cent">
 						<input type="hidden" name="table" value="Ad">
 						<input type="submit" value="修改確定">

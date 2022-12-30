@@ -7,8 +7,8 @@
 		<table width="100%">
 			<tbody>
 				<tr class="yel">
-					<td width="45%">帳號</td>
-					<td width="10%">密碼</td>
+					<td width="25%">帳號</td>
+					<td width="25%">密碼</td>
 					<td width="10%">刪除</td>
 				</tr>
 				<?php
